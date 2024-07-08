@@ -14,7 +14,7 @@ const WithdrawButtonId = document.getElementById("WithdrawButton").addEventListe
  const initialBalance = document.getElementById("balance_total");
  const initialBalanceString = initialBalance.innerText;
  const previousinitialBalance = parseFloat(initialBalanceString);
- console.log(previousinitialBalance);
+//  console.log(previousinitialBalance);
 
  
 
@@ -31,6 +31,14 @@ const currentBalance = previousinitialBalance - totalwithdraw;
 // console.log(currentBalance);
 //set the current balance
 initialBalance.innerText = currentBalance;
+
+//if there is less money
+  if(totalwithdraw> currentBalance){
+    alert("there is less money");
+    return ;
+  }
+
+
 
  //clear userwithdraw input field
      userWithdrawField.value = '';
