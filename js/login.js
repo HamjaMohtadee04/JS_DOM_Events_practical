@@ -17,10 +17,12 @@ document.getElementById("SubmitButton").addEventListener("click",function(){
    //do not verify email password on the client side
 
    if (Email ==="dummyemail1@gmail.com" && Password=== "1234"){
-    console.log("valid user");
+    // console.log("valid user");
+    // window.location.href -------->one page to another page
+    window.location.href ='bank.html';
    }
    else{
-    console.log("invalid user");
+    alert("invalid user");
    }
 
 });

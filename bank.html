@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6">Lets get some  
+            <span class="font-semibold text-orange-400">Money!!!!</span></h1>
+       </header>
+       <main>
+         <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-green-500 p-8 rounded-xl">
+                    <h4 class="text-2xl">Deposit</h4>
+                <h3 class="text-5xl">$00</h3>
+                </div>
+                <div class="bg-orange-500 p-8 rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+                <h3 class="text-5xl">$00</h3>
+                </div>
+                <div class="bg-violet-500 p-8 rounded-xl">
+                    <h4 class="text-2xl">Balance</h4>
+                <h3 class="text-5xl">$2000</h3>
+                </div>
+            </div>
+         </section>
+         <!-- Deposit and Withdraw -->
+         <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-green-500 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4">Please Deposit</h4>
+                    <input class="w-6/12 block mb-2 px-3" type="number" name="" id="userDeposit" placeholder="$Enter Your Deposit Amount">
+                    <button id="DepositButton" class="text-center
+            bg-amber-400 w-4/12 px-8 font-medium py-2 rounded-lg hover:bg-sky-700 text-center text-white ">Deposit</button> 
+                </div>
+
+                <div class="bg-orange-500 p-8 rounded-xl">
+                    <h4 class="text-2xl">Please Withdraw</h4>
+                    <input class="w-6/12 block mb-2 px-3" type="number" name="" id="userWithdraw" placeholder="$Enter Your Withdraw Amount">
+                    <button id="WithdrawButton" class="text-center
+            bg-amber-400 w-4/12 px-8 font-medium py-2 rounded-lg hover:bg-sky-700 text-center text-white ">Withdraw</button> 
+                </div>
+            </div>
+         </section>
+        </main>
+</body>
+</html>
